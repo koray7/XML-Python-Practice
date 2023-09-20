@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <group>
-    <person id="1">
-        <name>Annia Rosales</name>
-        <age>24</age>
-        <weight>120</weight>
+    <person id="700" newAttribute="Green">
+        <name>Koray Adams</name>
+        <age>30</age>
+        <weight>190</weight>
         <height>5'5</height>
     </person>
     <person id="2">
@@ -41,5 +41,23 @@
         <age>65</age>
         <weight>150</weight>
         <height>5'7</height>
+    </person>
+    <person id="77">
+        <name>Captain America</name>
+        <age>97</age>
+        <weight>220</weight>
+        <height>5'11</height>
+    </person>
+    <person id="100">
+        <name>Billy Butcher</name>
+        <age>41</age>
+        <weight>220</weight>
+        <height>6'1</height>
+    </person>
+    <person id="89">
+        <name>Frenchy</name>
+        <age>31</age>
+        <weight>167</weight>
+        <height>5'8</height>
     </person>
 </group>
