@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<group>
+    <person id="1">
+        <name>Annia Rosales</name>
+        <age>24</age>
+        <weight>120</weight>
+        <height>5'5</height>
+    </person>
+    <person id="2">
+        <name>Martin Pope</name>
+        <age>30</age>
+        <weight>150</weight>
+        <height>5'9</height>
+    </person>
+    <person id="3">
+        <name>Chris Mal</name>
+        <age>55</age>
+        <weight>180</weight>
+        <height>5'8</height>
+    </person>
+    <person id="4">
+        <name>Nicole Selene</name>
+        <age>50</age>
+        <weight>120</weight>
+        <height>5'3</height>
+    </person>
+    <person id="5">
+        <name>Dustin Adam</name>
+        <age>31</age>
+        <weight>160</weight>
+        <height>5'6</height>
+    </person>
+    <person id="6">
+        <name>Richard Suga</name>
+        <age>35</age>
+        <weight>190</weight>
+        <height>5'5</height>
+    </person>
+    <person id="7">
+        <name>Alex Hola</name>
+        <age>65</age>
+        <weight>150</weight>
+        <height>5'7</height>
+    </person>
+</group>
