@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Person Information</title>
+  </head>
+  <body>
+    <h1>Person Information</h1>
+    <table>
+      {% for key, value in person_info.items() %}
+      <tr>
+        <th>{{ key }}</th>
+        <td>{{ value }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <p><a href="/person">Search for another person</a></p>
+  </body>
+</html>
