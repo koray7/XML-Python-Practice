@@ -3,7 +3,6 @@ from flask import Flask, render_template, request, redirect, url_for, flash, ses
 from flask_session import Session
 import xml.dom.minidom
 
-
 app = Flask(__name__)
 app.secret_key = 'Austin7'
 
@@ -44,6 +43,7 @@ def index():
 
 @app.route('/person', methods=['GET', 'POST'])
 def show_person_info():
+    flash_message = None
     if request.method == 'POST':
         person_id = request.form.get('person_id')
         person_info = get_person_info(person_id)
@@ -56,16 +56,14 @@ def show_person_info():
             app.config['INCORRECT_ATTEMPTS'] += 1
             if app.config['INCORRECT_ATTEMPTS'] > 1:
                 flash_message = "You entered an invalid ID number. Please try another."
-                flash(flash_message)
 
-    return render_template('person_form.html')
+    return render_template('person_form.html', flash_message=flash_message)
 
 
 @app.route('/search', methods=['GET', 'POST'], endpoint='search_person')
 def search_person():
     flash_message = session.pop('flash_message', None)
 
-    # Check if search_results is already set in the session
     search_results = session.get('search_results', None)
 
     return render_template('person_form.html', flash_message=flash_message, search_results=search_results)
